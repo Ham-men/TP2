@@ -139,10 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Fabric.cpp" />
+    <ClCompile Include="Order.cpp" />
     <ClCompile Include="queue.cpp" />
     <ClCompile Include="TP2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Fabric.h" />
+    <ClInclude Include="lib_all.h" />
+    <ClInclude Include="Order.h" />
     <ClInclude Include="queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
