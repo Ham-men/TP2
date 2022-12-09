@@ -32,7 +32,7 @@ int return_int()
 	return atof(S);
 }
 
-int** qsortRecursive(int** mas, int size) {	//сортировка с использованием массива
+int** qsortRecursive(int** mas, int size) {	//сортировка
 	//Указатели в начало и в конец массива
 	int i = 0;
 	int j = size - 1;
@@ -189,7 +189,11 @@ int main() {
 
 			cout << "\nчтения файла result.txt\n";
 			in_txt.open("result.txt"); // окрываем файл для чтения
-
+			if (!in_txt.is_open())
+			{
+				cout << "\n файл не найден";
+				break;
+			}
 			if (in_txt.is_open())
 			{
 
